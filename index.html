@@ -77,6 +77,35 @@
       font-size:12px;
       color:rgba(244,255,249,.4);
     }
+    .legal{
+      margin-top:28px;
+      padding-top:20px;
+      border-top:1px solid rgba(255,255,255,.12);
+      text-align:right;
+      font-size:13px;
+      color:rgba(244,255,249,.7);
+    }
+    .legal h2{
+      font-size:15px;
+      font-weight:800;
+      margin-bottom:8px;
+      color:var(--accent);
+    }
+    .legal p{margin-bottom:10px}
+    .legal a{color:var(--accent);text-decoration:none}
+    .legal a:hover{text-decoration:underline}
+    .legal details{margin-top:14px}
+    .legal summary{
+      cursor:pointer;
+      font-weight:700;
+      color:var(--accent);
+      list-style:none;
+    }
+    .legal summary::-webkit-details-marker{display:none}
+    .legal summary::before{content:"▸ ";}
+    .legal details[open] summary::before{content:"▾ ";}
+    .legal ul{margin:10px 8px 0 0;padding-inline-start:18px}
+    .legal li{margin-bottom:6px}
   </style>
 </head>
 <body>
@@ -96,6 +125,26 @@
 
     <div class="fine">התשלום מתבצע בכרטיס אשראי · חשבונית/קבלה תישלח אוטומטית 🧾</div>
     <div class="foot">אתר סאטירי. כל שקל באמת הולך למיסים.</div>
+
+    <section class="legal">
+      <h2>פרטי בית העסק</h2>
+      <p>
+        אור אסולין<br />
+        כתובת: החילזון 5, רמת גן<br />
+        טלפון: <a href="tel:0523115976">052-3115976</a><br />
+        דוא"ל: <a href="mailto:or@42creative.co.il">or@42creative.co.il</a>
+      </p>
+
+      <details>
+        <summary>תקנון ביטולים ומדיניות החזרים</summary>
+        <ul>
+          <li>בהתאם לחוק הגנת הצרכן, התשמ"א-1981, ניתן לבטל את העסקה ולקבל החזר כספי מלא בתוך 14 ימים ממועד ביצוע התשלום.</li>
+          <li>לביטול עסקה יש לפנות בטלפון <a href="tel:0523115976">052-3115976</a> או בדוא"ל <a href="mailto:or@42creative.co.il">or@42creative.co.il</a>, תוך ציון פרטי העסקה.</li>
+          <li>ההחזר הכספי יבוצע לאמצעי התשלום שבאמצעותו שולמה העסקה, בתוך עד 14 ימי עסקים ממועד קבלת בקשת הביטול.</li>
+          <li>לא תיגבה עמלת ביטול.</li>
+        </ul>
+      </details>
+    </section>
   </main>
 </body>
 </html>
