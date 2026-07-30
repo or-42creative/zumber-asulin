@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>תודה שזמברת! · מזמברים את אסולין</title>
+  <meta property="og:title" content="תודה שזמברת את אסולין!" />
+  <style>
+    :root{
+      --bg1:#0b3d2e;
+      --bg2:#12694c;
+      --accent:#ffd43b;
+      --accent-dark:#f0b400;
+      --text:#f4fff9;
+      --card:rgba(255,255,255,.06);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:"Assistant","Segoe UI",Arial,sans-serif;
+      background:radial-gradient(circle at 30% 20%,var(--bg2),var(--bg1) 70%);
+      color:var(--text);
+      min-height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      line-height:1.7;
+    }
+    .wrap{
+      width:100%;
+      max-width:640px;
+      background:var(--card);
+      backdrop-filter:blur(6px);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:24px;
+      padding:40px 32px;
+      box-shadow:0 20px 60px rgba(0,0,0,.4);
+      text-align:center;
+    }
+    .emoji{font-size:60px;line-height:1;margin-bottom:10px;animation:pop .5s ease}
+    @keyframes pop{0%{transform:scale(0)}70%{transform:scale(1.2)}100%{transform:scale(1)}}
+    h1{
+      font-size:clamp(28px,7vw,44px);
+      font-weight:800;
+      margin-bottom:18px;
+      letter-spacing:-.5px;
+    }
+    p.lead{
+      font-size:clamp(16px,4.4vw,19px);
+      color:rgba(244,255,249,.9);
+      margin-bottom:14px;
+    }
+    .tax-note{
+      background:rgba(255,212,59,.1);
+      border:1px solid rgba(255,212,59,.3);
+      border-radius:14px;
+      padding:16px 18px;
+      font-size:15px;
+      color:rgba(244,255,249,.85);
+      margin:24px 0;
+    }
+    .tax-note b{color:var(--accent)}
+    .btn{
+      display:inline-block;
+      background:linear-gradient(180deg,var(--accent),var(--accent-dark));
+      color:#0b3d2e;
+      font-weight:800;
+      font-size:clamp(16px,4.4vw,19px);
+      text-decoration:none;
+      padding:15px 30px;
+      border-radius:16px;
+      box-shadow:0 8px 24px rgba(255,212,59,.35);
+      transition:transform .12s ease,box-shadow .12s ease;
+    }
+    .btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(255,212,59,.5)}
+    .btn:active{transform:translateY(0)}
+    .foot{
+      margin-top:26px;
+      font-size:12px;
+      color:rgba(244,255,249,.4);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="emoji">🪗🎉🧾</div>
+    <h1>תודה שזמברת את אסולין!</h1>
+    <p class="lead">
+      השקל שלך התקבל בהצלחה, וכבר עכשיו הוא בדרך לפייפאל, למס הכנסה ולביטוח
+      הלאומי — לא נשאר ממנו כמעט כלום, בדיוק כמו שרצית. ❤️
+    </p>
+
+    <div class="tax-note">
+      הקבלה שלך תישלח אליך אוטומטית למייל 📩<br />
+      <b>אור אסולין מודה לך</b> ומתחיל למלא טופס בשביל האגורות שנשארו.
+    </div>
+
+    <a class="btn" href="./">לזמבר עוד פעם &raquo;</a>
+
+    <div class="foot">אתר סאטירי. כל שקל באמת הולך למיסים.</div>
+  </main>
+</body>
+</html>
